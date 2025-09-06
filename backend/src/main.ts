@@ -6,7 +6,11 @@ async function bootstrap() {
   
   // Enable CORS for frontend communication
   app.enableCors({
-    origin: 'http://localhost:3000', // Frontend URL
+    origin: [
+      'http://localhost:3000',
+      'https://*.vercel.app', // Allow all Vercel deployments
+      'https://clinic-front-desk.vercel.app' // Your specific Vercel URL
+    ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
