@@ -9,7 +9,8 @@ async function bootstrap() {
     origin: [
       'http://localhost:3000',
       'https://*.vercel.app', // Allow all Vercel deployments
-      'https://clinic-front-desk.vercel.app' // Your specific Vercel URL
+      'https://cd-git-main-harsh-bablanis-projects.vercel.app', // Your specific Vercel URL
+      'https://clinic-front-desk.vercel.app' // Alternative Vercel URL
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
