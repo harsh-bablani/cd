@@ -106,7 +106,7 @@ export default function HomeContent() {
   };
 
   // Get API base URL from environment or default to localhost
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+  const API_BASE_URL = 'https://cd-ru8a.onrender.com';
 
   useEffect(() => {
     // Check if user is already authenticated

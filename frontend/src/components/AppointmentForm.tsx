@@ -78,7 +78,7 @@ export default function AppointmentForm({
 
   const fetchAvailableTimeSlots = async (doctorId: number, date: string) => {
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}/appointments/time-slots?doctorId=${doctorId}&date=${date}`);
+      const response = await fetch(`https://cd-ru8a.onrender.com/appointments/time-slots?doctorId=${doctorId}&date=${date}`);
       const slots = await response.json();
       setAvailableTimeSlots(slots);
     } catch (error) {
